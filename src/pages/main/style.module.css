@@ -1,0 +1,47 @@
+.main {
+    width: 80vw;
+    min-height: 95vh;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.searchBox {
+    width: 100%;
+    padding: 10px;
+}
+
+.searchBox input {
+    margin-right: 10px;
+}
+
+.searchBox button {
+    padding: 0% 5px;
+}
+
+
+.variations {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.variationsBox {
+    width: 45%;
+    margin: 10px;
+    height: 80px;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.variationsBox p {
+    width: 500px;
+    margin: 5px;
+}
