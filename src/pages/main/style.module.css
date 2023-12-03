@@ -4,8 +4,15 @@
     margin: 0 auto;
     margin-top: 10px;
     padding: 10px;
-    background-color: lightgray;
     border-radius: 5px;
+}
+
+.title {
+    margin: 20px 0px 20px 10px;
+}
+
+.title h3:first-child {
+    margin-bottom: 20px;
 }
 
 .searchBox {
@@ -21,27 +28,34 @@
     padding: 0% 5px;
 }
 
-
 .variations {
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-around;
+    display: grid;
+    /* grid-template-columns: auto auto;
+    grid-gap: 1px; */
+    grid-template-columns: repeat(2, 50%);
+    background-color: lightgray;
+    grid-gap: 1px;
 }
+.variations > * {
+    background-color: white;
+  }
 
 .variationsBox {
-    width: 45%;
-    margin: 10px;
-    height: 80px;
     padding: 5px 10px;
-    border: 1px solid white;
-    border-radius: 5px;
-    overflow: hidden;
-
+    min-height: 70px;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    align-items: center;
 }
 
-.variationsBox p {
+/* .variationsBox p {
     width: 500px;
     margin: 5px;
+} */
+
+.variationsBox p img {
+    margin-left: 5px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
 }
