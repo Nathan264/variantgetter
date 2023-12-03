@@ -30,8 +30,6 @@
 
 .variations {
     display: grid;
-    /* grid-template-columns: auto auto;
-    grid-gap: 1px; */
     grid-template-columns: repeat(2, 50%);
     background-color: lightgray;
     grid-gap: 1px;
@@ -44,18 +42,31 @@
     padding: 5px 10px;
     min-height: 70px;
     display: grid;
-    grid-template-columns: 1.3fr 1fr 1fr;
+    grid-template-columns: 1.3fr 1.2fr 0.8fr;
     align-items: center;
 }
-
-/* .variationsBox p {
-    width: 500px;
-    margin: 5px;
-} */
 
 .variationsBox p img {
     margin-left: 5px;
     width: 15px;
     height: 15px;
     cursor: pointer;
+}
+
+@media  screen and (max-width: 1100px) {
+    .variations {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        background-color: lightgray;
+        grid-gap: 1px;
+    }
+    .variationsBox {
+        padding: 0px;
+    }
+}
+
+@media  screen and (max-width: 550px) {
+    .variationsBox {
+        font-size: 13px;
+    }
 }
