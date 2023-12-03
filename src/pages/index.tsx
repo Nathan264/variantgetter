@@ -45,7 +45,7 @@ export default function MainPage()
             <div className={styles.main}>
                 <div className={styles.searchBox}>
                     <input type='text' name='mlb' onChange={e => setMlb(e.target.value)}/>
-                    <button onClick={() => getItems()}>Buscar</button>
+                    <button type="submit"  onTouchStart={() => getItems()}>Buscar</button>
                 </div>
 
                 {
